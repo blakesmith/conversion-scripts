@@ -5,35 +5,35 @@
 ### flac-mp3
 
 - Description: Converts a single flac file into an mp3 file
-- Usage: flac-mp3 <FLACFILE>
+- Usage: flac-mp3 FLACFILE
 - Example: flac-mp3 music.flac
 - Dependencies: flac, metaflac, lame
 
 ### flac-ogg
 
 - Description: Converts a single flac file into an ogg file
-- Usage: flac-ogg <FLACFILE>
+- Usage: flac-ogg FLACFILE
 - Example: flac-ogg music.flac
 - Dependencies: flac, metaflac, oggenc
 
 ### flac2mp3
 
 - Description: Converts an entire directory of flac files into a directory of mp3 files
-- Usage: cd <DIRECTORY>; flac2mp3
+- Usage: cd DIRECTORY; flac2mp3
 - Example: cd album/; flac2mp3
 - Dependencies: flac, metaflac, lame
 
 ### flac2ogg
 
 - Description: Converts an entire directory of flac files into a directory of ogg theora files
-- Usage: cd <DIRECTORY>; flac2ogg
+- Usage: cd DIRECTORYPATH; flac2ogg
 - Example: cd album/; flac2ogg
 - Dependencies: flac, metaflac, oggenc
 
 ### dir2wav
 
 - Description: Converts all mp3s in the specified directory into wav files in a wav folder.
-- Usage: dir2wav <DIRECTORY PATH>
+- Usage: dir2wav DIRECTORYPATH
 - Example: dir2wav ./
 - Dependencies: mplayer
 
@@ -46,8 +46,8 @@
 
 ### mencoder2dvd
 
-- Description: Converts an video playable by mplayer into a DVD compliant MPEG (NTFS)
-- Usage: mencoder2dvd <VIDEOFILE>
+- Description: Converts a video playable by mplayer into a DVD compliant MPEG (NTFS)
+- Usage: mencoder2dvd VIDEOFILE
 - Example: mencoder2dvd my_video_1.avi
 - Dependencies: mplayer
 
