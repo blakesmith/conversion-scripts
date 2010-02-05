@@ -1,0 +1,10 @@
+<dvdauthor dest="DVD">
+<vmgm />
+ <titleset>
+   <titles>
+     <pgc>
+       <vob file="my_video_1.mpg" chapters="0"/>
+     </pgc>
+    </titles>
+  </titleset>
+</dvdauthor>
