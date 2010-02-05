@@ -76,3 +76,13 @@ This will create a DVD/ directory with the appropriate DVD directory structure. 
 
 And you have a playable DVD!
 
+# Author
+
+All scripts are written by Blake Smith <blakesmith0@gmail.com>
+
+# Sources
+
+[Arch Linux CD Burning Tips](http://wiki.archlinux.org/index.php/CD_Burning_Tips)
+[LinuxQuestions.org - AVI to DVD](http://www.linuxquestions.org/questions/linux-software-2/avi-to-dvd-358548/)
+A bunch of other places too numerous to remember...
+
