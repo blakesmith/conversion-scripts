@@ -1,0 +1,7 @@
+#!/bin/bash
+mkdir $1/wav
+for file in $1/*.mp3
+do
+	NAME=`basename "${file}" .mp3`
+	mplayer -ao pcm:file="$1/wav/${NAME}.wav" "${file}"
+done

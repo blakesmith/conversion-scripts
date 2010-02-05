@@ -1,0 +1,11 @@
+#!/bin/bash
+QUALITY=0
+mkdir 'mp3'
+for i in *.flac ; do
+	ARTIST=`metaflac --show-tag=artist "$i" | sed -e 's/^.*=//'`
+	TITLE=`metaflac --show-tag=title "$i" | sed -e 's/^.*=//'`
+	ALBUM=`metaflac --show-tag=album "$i" | sed -e 's/^.*=//'`
+	GENRE=`metaflac --show-tag=genre "$i" | sed -e 's/^.*=//'`
+        OUTPUT=`echo mp3/\`basename "$i" .flac\`".mp3"`
+flac -d -c "$i" | lame -V $QUALITY -q 0 -m j --add-id3v2 --ta "$ARTIST" --tt "$TITLE" --tl "$ALBUM" --tg "$GENRE" - "$OUTPUT" 
+done

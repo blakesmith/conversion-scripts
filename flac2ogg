@@ -1,0 +1,11 @@
+#!/bin/bash
+QUALITY=7
+mkdir 'ogg'
+for i in *.flac ; do
+	ARTIST=`metaflac --show-tag=artist "$i" | sed -e 's/^.*=//'`
+	TITLE=`metaflac --show-tag=title "$i" | sed -e 's/^.*=//'`
+	ALBUM=`metaflac --show-tag=album "$i" | sed -e 's/^.*=//'`
+	GENRE=`metaflac --show-tag=genre "$i" | sed -e 's/^.*=//'`
+        OUTPUT=`echo ogg/\`basename "$i" .flac\`".ogg"`
+flac -d -c "$i" | oggenc -q $QUALITY -a "$ARTIST" -t "$TITLE" -l "$ALBUM" -G "$GENRE" -o "$OUTPUT" - 
+done
